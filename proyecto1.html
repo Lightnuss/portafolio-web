@@ -29,15 +29,91 @@
                   Proyectos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="proyecto1.html">Proyecto 1</a></li>
-                  <li><a class="dropdown-item" href="proyecto2.html">Proyecto 2</a></li>
-                  <li><a class="dropdown-item" href="proyecto3.html">Proyecto 3</a></li>
+                  <li><a class="dropdown-item" href="proyecto1.html">Formulario</a></li>
+                  <li><a class="dropdown-item" href="proyecto2.html">Tabla</a></li>
+                  <li><a class="dropdown-item" href="proyecto3.html">Algo</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      
+      <!--Añadido de muestra de proyecto-->
+
+      <div class="d-flex p-3 justify-content-center">
+        <h1>Formulario estándar</h1>
+      </div>
+
+      <div class="d-flex p-5 justify-content-center">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Lino" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Barrera" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Por favor elige un nombre de usuario.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Por favor elige una ciudad.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">Región</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Seleccionar...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor elige una región.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Código postal</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Por favor introduce un código postal válido.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Acepta los términos y condiciones.
+              </label>
+              <div class="invalid-feedback">
+                Debes aceptar los términos.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar formulario</button>
+          </div>
+        </form>
+      </div>
+
+      
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
