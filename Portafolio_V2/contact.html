@@ -53,33 +53,43 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <form id="contactForm"></form>
+                            <!--   <form id="contactForm" data-sb-form-api-token="API_TOKEN">!!!!Se Elimina!!!!!-->
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..."/>
+                                <!--    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" /> -->
                                         <label for="name">Nombre completo</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
+                                        <div class="invalid-feedback">Se requiere un nombre.</div>
+                                <!--    <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>-->
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com"/>
+                                <!--    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />-->
                                         <label for="email">Correo electrónico</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un correo electrónico.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">El correo electrónico no es válido</div>
+                                        <div class="invalid-feedback">Se requiere un correo electrónico.</div>
+                                        <div class="invalid-feedback">El correo electrónico no es válido</div>
+                                <!--    <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un correo electrónico.</div>-->
+                                <!--    <div class="invalid-feedback" data-sb-feedback="email:email">El correo electrónico no es válido</div>-->
+
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"/>
+                                <!--    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />-->
                                         <label for="phone">Número de teléfono</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un número de teléfono</div>
+                                        <div class="invalid-feedback">Se requiere un número de teléfono</div>
+                                <!--   <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un número de teléfono</div>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
                                         <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                         <label for="message">Mensaje</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje</div>
+                                        <div class="invalid-feedback">Se requiere un mensaje</div>
+                                <!--    <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje</div>-->
                                     </div>
-                                    <!-- Submit success message-->
+                                    <!--Submit success message-->
                                     <!---->
                                     <!-- This is what your users will see when the form-->
                                     <!-- has successfully submitted-->
@@ -128,6 +138,7 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
+        <script src="js/validaciones.js"></script>
     </body>
 </html>
