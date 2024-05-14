@@ -6618,6 +6618,32 @@ textarea.form-control-lg {
   content: "";
 }
 
+/* Mensaje de error de nombre */ 
+.invalid-feedback {
+    display: none;
+    color: red;
+}
+
+
+/* Mensaje de error de Correo */ 
+.invalid-feedback {
+  display: none;
+  color: red;
+}
+
+/* Mensaje de error de Telefono */ 
+.invalid-feedback {
+  display: none;
+  color: red;
+}
+
+/* Mensaje de error de Mensaje */ 
+.invalid-feedback {
+  display: none;
+  color: red;
+}
+
+
 .placeholder-xs {
   min-height: 0.6em;
 }
