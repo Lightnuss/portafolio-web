@@ -11737,3 +11737,9 @@ html {
     left: -2vw;
   }
 }
+
+ /* Formato de Alerta de Contreña */
+.invalid-feedback {
+  display: none;
+  color: red;
+}
