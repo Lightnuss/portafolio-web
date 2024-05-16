@@ -53,14 +53,14 @@
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">¡Estás a solo un paso!</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">¡Estás a un solo paso!</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             Al suscribirte, todas las novedades y últimas tendencias llegarán ahora a tu correo sin falta. ¡Crear es siempre mejorar!
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quizás luego</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="luego()">Cerrar</button>
                         <button type="button" class="btn btn-primary" onclick="suscrito()">Suscribirse</button>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
                         <button style="color: aliceblue;" type="button" class="btn bg-gradient-primary-to-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            ¡Suscríbete a nuestro newsletter! Novedades en diseño y nuevas tecnologías a tu alcance.
+                            ¡Presiona aquí para suscribirte a nuestro newsletter! Novedades en diseño y nuevas tecnologías a tu alcance.
                         </button>     
 
                         <div class="col-xxl-5">
@@ -215,12 +215,18 @@
                                             </g>
                                         </svg>
                                         <!-- END of SVG dots-->
+                                        
                                     </div>
+                                    
                                 </div>
+                                
                             </div>
                         </div>
+                        
                     </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="consejo()">Consejo creativo del día</button>
                 </div>
+
             </header>
         </main>
         <!-- Footer-->

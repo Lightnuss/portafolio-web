@@ -1,13 +1,23 @@
 
 
 function suscrito(){
-
     Swal.fire("¡Felicidades! Ya estás suscrito.");
+}
 
+function luego(){
+    Swal.fire("¡Hasta luego!")
 }
 
 function descarga(){
     Swal.fire("La descarga está en curso.")
+}
+
+function login(){
+    Swal.fire("Verificando ingreso. Espera un momento.")
+}
+
+function consejo(){
+    Swal.fire("La creatividad florece cuando te expones a nuevas experiencias y perspectivas. Intenta salir de tu zona de confort, ya sea leyendo un libro de un género diferente, explorando un nuevo lugar o aprendiendo algo nuevo. Mantener una mente abierta y curiosa puede inspirarte y darle un impulso a tu creatividad.")
 }
 
 
