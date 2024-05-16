@@ -1,3 +1,16 @@
+
+
+function suscrito(){
+
+    Swal.fire("¡Felicidades! Ya estás suscrito.");
+
+}
+
+function descarga(){
+    Swal.fire("La descarga está en curso.")
+}
+
+
 //Validacion de login (Email)
 const campoEmail = document.getElementById("email");
 

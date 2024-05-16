@@ -20,11 +20,13 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         
-        <script>
+        <script src="js/validaciones.js">
             
         </script>
         
     </head>
+
+    <style></style>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
@@ -45,35 +47,46 @@
             </nav>
 
             <div class="bs-example">
-             
-                <!-- Modal HTML -->
-                <div id="myModal" class="modal fade" tabindex="-1">
+                                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Modal Title</h5>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>This is a simple Bootstrap modal. Click the "Cancel button", "cross icon" or "dark gray area" to close or hide the modal.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary">Save</button>
-                            </div>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">¡Estás a solo un paso!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Al suscribirte, todas las novedades y últimas tendencias llegarán ahora a tu correo sin falta. ¡Crear es siempre mejorar!
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quizás luego</button>
+                        <button type="button" class="btn btn-primary" onclick="suscrito()">Suscribirse</button>
                         </div>
                     </div>
+                    </div>
                 </div>
-            </div>
             
             <!-- Header-->
             <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
+                        <button style="color: aliceblue;" type="button" class="btn bg-gradient-primary-to-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            ¡Suscríbete a nuestro newsletter! Novedades en diseño y nuevas tecnologías a tu alcance.
+                        </button>     
+
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Diseño &middot; Desarrollo &middot; Marketing</div></div>
+
+                                
+
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                    <div class="text-uppercase">Diseño &middot; Desarrollo &middot; Marketing</div>
+                                
+                                       
+
+                                </div>
                                 <div class="fs-3 fw-light text-muted">Podemos mejorar tu negocio</div>
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Entra a la web,crece rápidamente (ง︡'-'︠)ง </span></h1>
                                 <div class="d-grid gap-4 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
@@ -242,5 +255,7 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- Fin Libreras JavaScript -->
+
+        
     </body>
 </html>
