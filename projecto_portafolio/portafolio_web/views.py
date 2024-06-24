@@ -25,3 +25,7 @@ def reservation(request):
 def service(request):
     context={}
     return render(request, 'portafolio_web/proyectos.html', context)
+
+def service(request):
+    context={}
+    return render(request, 'portafolio_web/registro.html', context)
