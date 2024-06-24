@@ -6,10 +6,10 @@ urlpatterns=[
 
     # Cada una de mis paginas web:
     path('index',views.index, name='index'),
-    path('nosotros',views.about, name='nosotros'),
-    path('contacto',views.contact, name='contacto'),
-    path('curriculum',views.menu, name='curriculum'),
-    path('login',views.reservation, name='login'),
-    path('proyectos',views.service, name='proyectos'),
-    path('registro',views.service, name='registro'),
+    path('nosotros',views.nosotros, name='nosotros'),
+    path('contacto',views.contacto, name='contacto'),
+    path('curriculum',views.curriculum, name='curriculum'),
+    path('login',views.login, name='login'),
+    path('proyectos',views.proyectos, name='proyectos'),
+    path('registro',views.registro, name='registro'),
 ]
