@@ -1,0 +1,32 @@
+
+<h1>Lista de Trabajadores</h1>
+<a href="{% url 'trabajador_create' %}">Nuevo Trabajador</a>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Sexo</th>
+            <th>Antigüedad</th>
+            <th>Sueldo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for trabajador in trabajadores %}
+            <tr>
+                <td>{{ trabajador.nombre }}</td>
+                <td>{{ trabajador.apellido }}</td>
+                <td>{{ trabajador.edad }}</td>
+                <td>{{ trabajador.sexo }}</td>
+                <td>{{ trabajador.antiguedad }}</td>
+                <td>{{ trabajador.sueldo }}</td>
+                <td>
+                    <a href="{% url 'trabajador_update' trabajador.id %}">Editar</a>
+                    <a href="{% url 'trabajador_delete' trabajador.id %}">Eliminar</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

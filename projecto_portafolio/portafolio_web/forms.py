@@ -1,8 +1,8 @@
+# clientes/forms.py
 from django import forms
-from django.forms import ModelForm
-from models import Cliente
+from .models import Cliente
 
-class ClienteForm(ModelForm):
+class ClienteForm(forms.ModelForm):
     class Meta:
         model = Cliente
-        fields = "__all__"
+        fields = ['nombre', 'apellido', 'contraseña']

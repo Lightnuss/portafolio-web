@@ -12,4 +12,9 @@ urlpatterns=[
     path('login',views.login, name='login'),
     path('proyectos',views.proyectos, name='proyectos'),
     path('registro',views.registro, name='registro'),
+    path('cliente/list', views.cliente_list, name='cliente_list'),
+    path('cliente/<int:pk>/', views.cliente_detail, name='cliente_detail'),
+    path('cliente/new/', views.cliente_create, name='cliente_create'),
+    path('cliente/<int:pk>/edit/', views.cliente_update, name='cliente_update'),
+    path('cliente/<int:pk>/delete/', views.cliente_delete, name='cliente_delete'),
 ]

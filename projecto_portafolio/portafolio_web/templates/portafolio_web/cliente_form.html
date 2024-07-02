@@ -1,0 +1,7 @@
+<!-- clientes/templates/clientes/cliente_form.html -->
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+<a href="{% url 'cliente_list' %}">Cancelar</a>

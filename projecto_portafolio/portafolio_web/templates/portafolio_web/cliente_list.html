@@ -1,0 +1,8 @@
+<!-- clientes/templates/clientes/cliente_list.html -->
+{% for cliente in clientes %}
+    <p>{{ cliente.nombre }} {{ cliente.apellido }}</p>
+    <a href="{% url 'cliente_detail' cliente.pk %}">Detalle</a>
+    <a href="{% url 'cliente_update' cliente.pk %}">Editar</a>
+    <a href="{% url 'cliente_delete' cliente.pk %}">Eliminar</a>
+{% endfor %}
+<a href="{% url 'cliente_create' %}">Nuevo Cliente</a>
