@@ -1,0 +1,19 @@
+{% extends 'portafolio_web/base.html' %}
+
+{% block title %}Listado de Proyectos{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1>Proyectos</h1>
+    <a href="{% url 'proyecto_create' %}" class="btn btn-primary">Crear Proyecto</a>
+    
+        {% for proyecto in proyectos %}
+            <li>
+                {{ proyecto.nombre }} - 
+                <a href="{% url 'proyecto_update' proyecto.pk %}">Editar</a> - 
+                <a href="{% url 'proyecto_delete' proyecto.pk %}">Eliminar</a>
+            </li>
+        {% endfor %}
+</div>
+{% endblock %}
+

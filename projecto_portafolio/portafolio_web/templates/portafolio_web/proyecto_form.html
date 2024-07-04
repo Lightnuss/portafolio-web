@@ -1,0 +1,15 @@
+{% extends 'portafolio_web/base.html' %}
+
+{% block title %}Crear/Editar Proyecto{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1>{{ form.instance.pk|yesno:"Editar Proyecto,Crear Proyecto" }}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
+{% endblock %}
+

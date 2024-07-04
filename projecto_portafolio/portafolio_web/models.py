@@ -1,8 +1,13 @@
+
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
+class Proyecto(models.Model):
+    nombre = models.CharField(max_length=100)
+    descripcion = models.TextField()
+    imagen = models.ImageField(upload_to='proyectos/', null=True, blank=True)
 
-class Cliente(models.Model):
-    nombre      = models.CharField(max_length=30)
-    apellido    = models.CharField(max_length=30)
-    contraseña  = models.CharField(max_length=10)
+    def __str__(self):
+        return self.nombre
+
+
